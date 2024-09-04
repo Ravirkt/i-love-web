@@ -1,0 +1,11 @@
+.headsection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #headimage {
+    filter: contrast(1.5);
+    filter: drop-shadow(40);
+  }
+  

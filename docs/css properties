@@ -1,0 +1,58 @@
+#github:hover {
+  transform: scale(1.5);
+}
+
+/* Met :hover kun je een effect creeren als je met je muisaanwijzer over een element swiped. in
+dit geval wordt de property transform gebruikt met scale. Dit zorgt ervoor dat de schaal van 
+het element 1.5 keer groter wordt er je erover hovert. 
+*/
+
+
+
+----- Properties -----
+
+Border-radius: 10px
+Hiermee kun je de radius van de hoeken van een border wijzigigen. je kunt de hoeken 
+een ronding geven.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+
+
+Display: flex;
+Als je deze property gebruikt maak van flexbox. Hiermee kun je de uitlijning en positie van elementen in die flexbox
+verdelen op de pagina. Dit maakt de het element ook responsive
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+Flex-direction
+Hiermee kun je de richting bepalen van de elementen in de flexbox.
+dit kan horizontaal of verticaal zijn
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+Justify-content
+Hiermee bepaal je de positie van de elemnten in de flexbox in de main-axis dus horizontaal
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+
+align-items
+Hiermee kun je de positie bepalen van de objecten in de cross-axis dus verticaal
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+
+Border
+Met border kun je de rand van een element wijzigen. dit kan zijn de kleur of de dikte van de rand.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
+list-style-type
+Hiermee kun je van een lijst de punt weghalen of wijzigen.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+
+filter: 
+Hiermee kun je grafische effecten toepassen op elementen. Bijvoorbeeld het veranderen van het contrast.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/filter

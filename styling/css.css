@@ -1,0 +1,15 @@
+.onderwerpen {
+    display:flex ;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 30px;
+    
+}
+
+.categorie {
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+    text-align: center;
+
+}
