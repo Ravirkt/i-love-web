@@ -1,11 +1,33 @@
 .headsection {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  #headimage {
-    filter: contrast(1.5);
-    filter: drop-shadow(40);
-  }
-  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* #headimage {
+  filter: contrast(1.5);
+  filter: drop-shadow(40);
+} */
+
+.onderwerpen {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+
+.categorie {
+  height: 300px;
+  width: 400px;
+  background-color: rgb(80, 82, 82);
+  text-align: center;
+}
+
+
+.categorie1 {
+  background-color: blue;
+  height: 60vw;
+}
