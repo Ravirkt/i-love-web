@@ -1,6 +1,7 @@
 .headsection {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   flex-direction: column;
 }
 
@@ -28,6 +29,11 @@
 
 
 .categorie1 {
+  background-color: blue;
+  height: 60vw;
+}
+
+.categorie2 {
   background-color: blue;
   height: 60vw;
 }
