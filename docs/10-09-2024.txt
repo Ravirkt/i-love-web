@@ -1,0 +1,53 @@
+in de parent definieer je de grid en in de child pas je het aan
+
+display: grid 
+om een grid te maken
+gap: 1em (ruimte maken tussen grid elementen)
+
+grid-template-columns: 1fr 4fr 2fr (is fraction)
+
+
+grid-column-start: 2 (grid laten beginnen mij kolom lijn 2 )
+grid-column-end: 4 
+
+
+grid-column:1/-1
+
+article:nth-of-type(3n) hier elke 3de element wordt geselecteert
+
+
+
+stappenplan grid
+
+1. opwerp je card
+
+2. teken je grid als schets
+
+3. denieer je grid
+
+4. positioneer je elementen
+
+
+
+meta queries
+
+als je elementen meer dat 40 em zijn moet je nieuwe dingen verzinnen voor schermen groter dan 40em
+@media {width>40em} {
+
+
+}
+
+grid-area-templates
+
+Daily-checkout
+
+wat heb ik geleerd:
+
+1. grid
+2. child
+3. parent
+
+Wat ik heb gedaan:
+
+1. grid opdrachten maken
+2. Grid leren

@@ -4,15 +4,17 @@ body {
 
 .navigatie {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 140px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: grid;
+  gap: 10em;
+  grid-template-columns: repeat(4,1fr); 
+  grid-template-rows: 1fr;
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   text-align: center;
   font-size: x-large;
-  font-weight: bold;
+  font-weight: bold; 
   background-color: black;
-  height: 50px;
+  padding: 1em;
+  
 }
 
 a {
@@ -20,7 +22,7 @@ a {
   color: white;
 }
 a:hover {
-  color: green;
+  color: #008000;
 }
 
 
