@@ -1,5 +1,4 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(0, 0, 0);
 }
 
@@ -13,17 +12,14 @@ body {
 .header-image {
   grid-column: 3 / 4;
   margin-top: 8em;
-   scale: 1.7; 
- 
-  
-
+  scale: 1.7;
 }
 
 .header-text {
-grid-column: 2 / 2;
-justify-content: center;
-margin-top: 8em;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  grid-column: 2 / 2;
+  justify-content: center;
+  margin-top: 8em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header-titel {
@@ -42,10 +38,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   display: inline;
 }
 
-
 /* ////////////////////////////////////////////////////////////// */
-
-
 
 .sectie-containers {
   display: grid;
@@ -55,23 +48,65 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   margin-left: 1em;
   margin-top: 16em;
   margin-right: 1em;
-  margin-bottom: 2em;
 }
-
-
-
-
 
 .sectie-1 {
   background-color: #e3e0e0;
 }
 
+.sectie-1 {
+  padding: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.sectie-1 h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.sectie-1 p.sub-titel {
+  font-size: 1.2em;
+  color: #495057;
+}
+
+.sectie-1 img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 21vw;
+  height: 22em;
+}
+
 .sectie-2 {
-  background-color: rgba(185, 194, 185, 0.996);
+  background-color: #e9ecef;
+  border-radius: 10px;
+}
+
+.sectie-2 h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #343a40;
+  text-align: center;
 
 }
 
+.sectie-2 p.sub-titel {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #495057;
+  margin-top: 15px;
+}
 
+.sectie-2 p.paragraaf {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #343a40;
+  line-height: 1.5;
+}
 
 .titel {
   display: block;
@@ -85,17 +120,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 800;
   margin: 10px;
-
-
 }
 
 .paragraaf {
   margin: 10px;
-
 }
 
 img {
   width: 21vw;
   height: 22em;
-
 }
