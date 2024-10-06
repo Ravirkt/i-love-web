@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styling/html.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+</head>
+
+<body id="container">
+    <header>
+        <h1>Lojdf sjfsd sjdnfs jsdf jsnfsd jsdf s?</h1>
+
+    </header>
+    <nav class="navigation">
+
+        <h2>Subjects</h2>
+        <a href="#basic-layout">
+            <p>basic-layout</p>
+        </a>
+        <a href="#heading">
+            <p>Headings</p>
+        </a>
+        <a href="#paragraph">
+            <p><code>&lt;p&gt;</code></p>
+        </a>
+        <a href="#break">
+            <p><code>&lt;br&gt;</code></p>
+        </a>
+        <a href="#border">
+            <p><code>&lt;hr&gt;</code></p>
+        </a>
+        <a href="#blockquote">
+            <p><code>&lt;blockquote&gt;</code></p>
+        </a>
+        <a href="#strong">
+            <p><code>&lt;strong&gt;</code></p>
+        </a>
+        <a href="#em">
+            <p><code>&lt;em&gt;</code></p>
+        </a>
+        <a href="#small">
+            <p><code>&lt;small&gt;</code></p>
+        </a>
+        <a href="#mark">
+            <p><code>&lt;mark&gt;</code></p>
+        </a>
+        <a href="#ins">
+            <p><code>&lt;ins&gt;</code></p>
+        </a>
+        <a href="#html-list">
+            <p><code>&lt;list&gt;</code></p>
+        </a>
+        <a href="#anker">
+            <p><code>&lt;a&gt;</code></p>
+        </a>
+
+
+
+        <p><strong>Media-elements</strong></p>
+
+        <a href="#images">
+            <p><code>&lt;img&gt;</code></p>
+        </a>
+        <a href="#video">
+            <p><code>&lt;video&gt;</code></p>
+        </a>
+        <a href="#audio">
+            <p><code>&lt;audio&gt;</code></p>
+        </a>
+        <a href="#iframe">
+            <p><code>&lt;iframe&gt;</code></p>
+        </a>
+        <a href="#canvas">
+            <p><code>&lt;canvas&gt;</code></p>
+        </a>
+       
+        
+
+
+    </nav>
+
+    <!-- ---------------------------------------------------------- -->
+
+    <main>
+        <section class="layout" id="basic-layout">
+            <h3>Basic-layout</h3>
+            <p>Zo ziet de basic layout van een html pagina eruit:<pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                &lt;/head&gt;
+                
+                &lt;body&gt;
+                    &lt;header&gt;
+                
+                    &lt;/header&gt;
+                    &lt;nav&gt;
+                
+                    &lt;/nav&gt;
+                
+                    &lt;main&gt;
+                
+                    &lt;/main&gt;
+                
+                    &lt;footer&gt;
+                
+                    &lt;/footer&gt;
+                &lt;/body&gt;
+                
+                &lt;/html&gt;
+                </code></pre><br>
+            </p>
+            <h4>html-structuur</h4>
+            <p>Dit is eigenlijk de basis van een webpagina en bepaalt hoe een webpagina is opgebouwd. Deze structuur
+                zorgt ervoor dat browsers en zoekmachines, zoals Google, de inhoud van de pagina goed kunnen verwerken,
+                interpreteren en weergeven.<br><br>
+
+                <code>Doctype</code><br>
+
+                Dit is de eerste regel van een html-pagina. Dit laat de browser weten dat dit een html pagina is en
+                welke versie van html er gebruikt wordt.<br><br>
+
+                <code>&lt;html&gt;</code><br>
+                Tussen de deze tag bevindt zich alle html-code inclusief 2 hele belangrijke tags, namelijk de
+                <code>head</code> en <code>body</code>.<br><br>
+
+                <code>&lt;head&gt;</code><br>
+
+                tussen deze tag bevindt zich de meta data van de pagina, bijvoorbeeld de &lt;title&gt; en &lt;links&gt;
+                van
+                stylesheets. ook bevat het de
+
+                &lt;meta&gt; tag. Hierin zit data om ervoor te zorgen dat de browser de pagina juist inlaat. De meta
+                tags zijn niet zichtbaar in de pagina. maar zorgen ervoor dat de pagina juist geladen moet
+                worden.<br><br>
+
+                <code>&lt;body&gt;</code><br>
+                Hier bevindt zich alle zichtbare inhoud van een pagina, bijvoorbeeld de &lt;img&gt; &lt;p&gt; etc.. .
+            </p>
+        </section>
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="heading" id="heading">
+            <h3>Heading</h3>
+            <p> Headings zijn de koppen van elementen, deze zijn gerangschikt van belangrijk naar minder belangrijk. Er
+                zijn 6 headings.</p>
+            <br>
+            <p>Dit is h1</p>
+            <h1>heading</h1>
+            <br>
+            <p>Dit is h2</p>
+            <h2>heading</h2>
+            <br>
+            <p>Dit is h3</p>
+            <h3>heading</h3>
+            <br>
+            <p>Dit is h4</p>
+            <h4>heading</h4>
+            <br>
+            <p>Dit is h5</p>
+            <h5>heading</h5>
+            <br>
+            <p>Dit is h6</p>
+            <h6>heading</h6>
+            <pre>
+                <code>
+    &lt;p&gt;Dit is h1&lt;/p&gt;
+    &lt;h1&gt;heading&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;Dit is h2&lt;/p&gt;
+    &lt;h2&gt;heading&lt;/h2&gt;
+    &lt;br&gt;
+    &lt;p&gt;Dit is h3&lt;/p&gt;
+    &lt;h3&gt;heading&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;p&gt;Dit is h4&lt;/p&gt;
+    &lt;h4&gt;heading&lt;/h4&gt;
+    &lt;br&gt;
+    &lt;p&gt;Dit is h5&lt;/p&gt;
+    &lt;h5&gt;heading&lt;/h5&gt;
+    &lt;br&gt;
+    &lt;p&gt;Dit is h6&lt;/p&gt;
+    &lt;h6&gt;heading&lt;/h6&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="paragraph" id="paragraph">
+            <h3><code>&lt;p&gt;</code></h3>
+            <pre>
+                <code>
+                    &lt;p&gt;Een paragraph word gebruikt voor het schrijven van een text.
+                    Je gebruikt de openingstag:&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; en de sluitingstag:&lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;.Een
+                    paragraph begint altijd op een nieuwe witregel.&lt;/p&gt;
+                </code>
+            </pre>
+            <p>Een paragraph word gebruikt voor het schrijven van een text.
+                Je gebruikt de openingstag:<code>&lt;p&gt;</code> en de sluitingstag:<code>&lt;/p&gt;</code>.Een
+                paragraph begint altijd op een nieuwe witregel.
+            </p>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="break" id="break">
+            <h3><code>&lt;br&gt;</code></h3>
+            <p>Om elementen als bijvoorbeels afbeeldingen en tekst te laten beginnen om een nieuwe witregel.
+                Maak je gebruik van <code>&lt;br&gt;</code>. Dit staat voor brake.
+            </p>
+            <br>
+            <p>
+                random tekst en ik wil nu een witregel ertussen.<br>Ik wil dat deze zin op de volgende regel komt.
+            </p>
+            <pre>
+            <code>
+                &lt;p&gt;random tekst en ik wil nu een witregel ertussen &lt;br&gt;.Ik wil dat deze zin op de volgende regel komt.&lt;/p&gt;
+            </code>
+        </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="border" id="border">
+            <h3><code>&lt;hr&gt;</code></h3>
+            <p>Voor het maken van een horizontale lijn om bijvoorbeeld secties van elkaar te scheiden.</p>
+            <hr>
+            <pre>
+                <code>
+                    &lt;p&gt;Voor het maken van een horizontale lijn om bijvoorbeeld secties van elkaar te scheiden.&lt;/p&gt;
+                    &lt;hr&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="blockquote" id="blockquote">
+            <h3><code>&lt;blockquote&gt;</code></h3>
+            <p>Dit wordt gebruikt voor bronvermelding.</p>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="strong" id="strong">
+            <h3><code>&lt;strong&gt;</code></h3>
+            <p>Dit wordt gebruikt voor het aangeven dat iets <strong>belangrijk</strong> is. Het maakt de tekst
+                vetgedrukt.</p>
+            <pre>
+                <code>
+                    &lt;p&gt;Dit wordt gebruikt voor het aangeven dat iets &lt;strong&gt;belangrijk&lt;/strong&gt; is. Het maakt de tekst vetgedrukt.&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="em" id="em">
+            <h3><code>&lt;em&gt;</code></h3>
+            <p>Dit maakt de tekst <em>cursief.</em></p>
+            <pre>
+                <code>
+                    &lt;p&gt;Dit maakt de tekst &lt;em&gt;cursief.&lt;/em&gt;&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="small" id="small">
+            <h3><code>&lt;small&gt;</code></h3>
+            <p>Dit maakt de tekst <small>kleiner.</small></p>
+            <pre>
+                <code>
+                    &lt;p&gt;Dit maakt de tekst &lt;small&gt;kleiner.&lt;/small&gt;&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="mark" id="mark">
+            <h3><code>&lt;mark&gt;</code></h3>
+            <p>Dit <mark>markeert</mark> de tekst.</p>
+            <pre>
+                <code>
+                    &lt;p&gt;Dit &lt;mark&gt;markeert&lt;/mark&gt; de tekst.&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <Section class="del" id="del">
+            <h3><code>&lt;del&gt;</code></h3>
+            <p>Dit <del>doorkruist</del> de tekst</p>
+            <pre>
+                <code>
+                    &lt;p&gt;Dit &lt;del&gt;doorkruist&lt;/del&gt; de tekst&lt;/p&gt;
+                </code>
+            </pre>
+        </Section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="ins" id="ins">
+            <h3><code>&lt;ins&gt;</code></h3>
+            <p>
+                Dit wordt gebruikt voor het vervangen van een tekst dat is verwijderd met <code>&lt;del&gt;.</code>
+            </p> <br>
+            <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+            <pre>
+                <code>
+                    &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="html-list" id="html-list">
+            <h3><code>&lt;List&gt;</code></h3>
+            <p>Dit staat voor <strong>unordered list</strong>. Een ongesorteerde lijst is een lijst zonder een bepaalde
+                volgorde. De
+                items in deze lijst worden vaak weergegeven met een bolletje.</p> <br>
+            <ul style="padding-left: 10px;">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+            </ul><br>
+
+            <p>Dit is een <strong>ordered list</strong>. hier maakt de volgorde wel uit. Het is genummerd:</p><br>
+
+            <ol style="padding-left: 20px;">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+            </ol><br>
+
+            <p>Dit is een <strong>definitie lijst</strong>. Hiermee kun je definities weergeven van bepaalde termen:</p>
+            <br>
+            <dl>
+                <dt>appel</dt>
+                <dd>Een fruit dat groeit aan bomen.</dd>
+                <br>
+
+                <dt>CSS</dt>
+                <dd>Een stijltaal voor het opmaken van HTML-elementen.</dd>
+            </dl>
+
+            <p>Elke item van eem list wordt aangeduidt met listitem: <code>&lt;li&gt;</code>:</p>
+            <br>
+            <li>Dit is een item in de lijst</li>
+
+            <pre>
+                    <code>
+                        &lt;li&gt;Dit is een item in de lijst&lt;/li&gt;
+
+                        Een unordered list:
+
+                        &lt;ul&gt;                                            
+                            &lt;li&gt;item-1&lt;/li&gt;
+                            &lt;li&gt;item-2&lt;/li&gt;
+                            &lt;li&gt;item-3&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                        Een ordered list:
+
+                        &lt;ol&gt;
+                            &lt;li&gt;item-1&lt;/li&gt;
+                            &lt;li&gt;item-2&lt;/li&gt;
+                            &lt;li&gt;item-3&lt;/li&gt;
+                        &lt;/ol&gt;
+
+                        Een defintielijst:
+
+                        &lt;dt&gt;Term&lt;/dt&gt;
+                        
+                        &lt;dd&gt;Dit is de uitleg van de term.&lt;/dd&gt;
+
+                        &lt;dl&gt;
+                            &lt;dt&gt;appel&lt;/dt&gt;
+                            &lt;dd&gt;Een fruit dat groeit aan bomen.&lt;/dd&gt;
+
+                            &lt;dt&gt;CSS&lt;/dt&gt;
+                            &lt;dd&gt;Een stijltaal voor het opmaken van HTML-elementen.&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    </code>
+                </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="anker" id="anker">
+            <h3><code>&lt;a&gt;</code></h3>
+            <p>Met de anker element kun je links toevoegen aan elementen, bijvoorbeeld je headings, images etc.. .</p>
+            <p> Bijvoorbeeld het linken naar een andere pagina:
+                <a href="/test.html">LINK</a>
+            </p>
+            <pre>
+    <code>
+        &lt;p&gt; Bijvoorbeeld het linken naar een andere pagina:
+            &lt;a href=&quot;/test.html&quot;&gt;een link&lt;/a&gt;
+        &lt;/p&gt; 
+    </code>
+</pre>
+        </section>
+
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+
+        <section class="images" id="images">
+            <h3><code>&lt;img&gt;</code></h3>
+            <p>Inladen van images kun je doen met de <code>&lt;img&gt;</code> tag. met src moet je het pad of url
+                weergeven waar de image is opgeslagen.</p><br>
+            <img src="https://picsum.photos/200/200">
+            <pre>
+                <code>
+                     &lt;img src=&quot;https://picsum.photos/200/200&quot;&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <Section class="video" id="video">
+            <h3><code>&lt;video&gt;</code></h3>
+            <p>Voor het inladen van video gebruik je de <code>&lt;video&gt;</code> tag. Ook hier geef je de url of pad
+                weer in de src.</p><br>
+            <video src="/images/video.mp4" style="height: 200px;" loop autoplay controls></video><br><br>
+
+            <p><strong>loop</strong>: zorgt ervoor dat de video steeds opnieuw afspeelt.</p>
+            <p><strong>autoplay</strong>: zorgt ervoor dat de video automatisch afspeelt.</p>
+            <p><strong>controls</strong>: zorgt ervoor dat de controls hebt op de video om de video bijvoorbeeld te
+                pauzeren of af te spelen.</p>
+
+            <pre>
+                <code>
+                    &lt;video src=&quot;/images/video.mp4&quot; style=&quot;height: 200px;&quot; loop autoplay controls&gt;&lt;/video&gt;
+                </code>
+            </pre>
+        </Section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="audio" id="audio">
+            <h3><code>&lt;audio&gt;</code></h3>
+            <p>Voor het inladen van audio gebruik je de <code>&lt;audio&gt;</code> tag. ook hier maak je weer gebruik
+                van de src. </p><br>
+
+            <audio controls src="/images/video.mp4"></audio><br><br>
+
+            <p><strong>controls</strong>: zorgt ervoor dat je de controls hebt om de audio af te spelen. Ook hier kun je
+                'loop' en 'autoplay' gebruiken</p>
+
+            <pre>
+                <code>
+                    &lt;audio controls src=&quot;/images/video.mp4&quot;&gt;&lt;/audio&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="iframe" id="iframe">
+            <h3><code>&lt;iframe&gt;</code></h3>
+            <p>Hiermee je een stukje van een andere website in jouwe website plaatsen.</p><br>
+            <iframe width="300" height="200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+            </iframe>
+            <pre>
+                <code>
+                    &lt;iframe width=&quot;300&quot; height=&quot;200&quot;
+                    src=&quot;https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.
+                    00030577182769775396%2C51.478569861898606&amp;layer=mapnik&quot;&gt;
+                    &lt;/iframe&gt;
+                </code>
+            </pre>
+        </section>
+
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="canvas" id="canvas">
+            <h3><code>&lt;canvas&gt;</code></h3>
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
