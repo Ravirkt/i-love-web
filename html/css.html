@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../styling/css.css">
+    <link rel="stylesheet" href="../styling/flex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+</head>
+
+<body id="container">
+    <header>
+        <h1> css css css csscscscscscs</h1>
+
+    </header>
+    <nav class="navigation">
+
+        <h2>Subjects</h2>
+        <p><strong>Media-elements</strong></p>
+
+        <a href="Grid">
+            <p>Grid</p>
+        </a>
+
+        <a href="#flexbox">
+            <p>Flexbox</p>
+        </a>
+
+        <a href="#flex-direction">
+            <p>Flex-direction</p>
+        </a>
+
+        <a href="#flex-wrap">
+            <p>Flex-wrap</p>
+        </a>
+
+
+
+
+
+
+
+    </nav>
+
+    <main>
+        <section class="grid" id="grid">
+            <h3>Grid</h3>
+            <p>Zo ziet de basic layout van een html pagina eruit:
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                &lt;/head&gt;
+                
+                &lt;body&gt;
+                    &lt;header&gt;
+                
+                    &lt;/header&gt;
+                    &lt;nav&gt;
+                
+                    &lt;/nav&gt;
+                
+                    &lt;main&gt;
+                
+                    &lt;/main&gt;
+                
+                    &lt;footer&gt;
+                
+                    &lt;/footer&gt;
+                &lt;/body&gt;
+                
+                &lt;/html&gt;
+                </code></pre><br>
+            </p>
+            <h4>html-structuur</h4>
+            <p>Dit is eigenlijk de basis van een webpagina en bepaalt hoe een webpagina is opgebouwd. Deze structuur
+                zorgt ervoor dat browsers en zoekmachines, zoals Google, de inhoud van de pagina goed kunnen verwerken,
+                interpreteren en weergeven.<br><br>
+
+                <code>Doctype</code><br>
+
+                Dit is de eerste regel van een html-pagina. Dit laat de browser weten dat dit een html pagina is en
+                welke versie van html er gebruikt wordt.<br><br>
+
+                <code>&lt;html&gt;</code><br>
+                Tussen de deze tag bevindt zich alle html-code inclusief 2 hele belangrijke tags, namelijk de
+                <code>head</code> en <code>body</code>.<br><br>
+
+                <code>&lt;head&gt;</code><br>
+
+                tussen deze tag bevindt zich de meta data van de pagina, bijvoorbeeld de &lt;title&gt; en &lt;links&gt;
+                van
+                stylesheets. ook bevat het de
+
+                &lt;meta&gt; tag. Hierin zit data om ervoor te zorgen dat de browser de pagina juist inlaat. De meta
+                tags zijn niet zichtbaar in de pagina. maar zorgen ervoor dat de pagina juist geladen moet
+                worden.<br><br>
+
+                <code>&lt;body&gt;</code><br>
+                Hier bevindt zich alle zichtbare inhoud van een pagina, bijvoorbeeld de &lt;img&gt; &lt;p&gt; etc.. .
+            </p>
+        </section>
+
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+        <section class="flexbox" id="flexbox">
+            <h3>Flexbox</h3>
+            <p>Flexbox kun je gebruiken voor het maken van flexibele layouts in css.
+                Het is belangrijk dat je css properties voor de parent en child-elementen onderscheidt.
+            </p>
+            <pre>
+                <code>
+                &lt;section class=&quot;parent-container&quot;&gt;
+                    &lt;di class=&quot;child-element&quot;&gt;item1&lt;/di&gt;
+                    &lt;di class=&quot;child-element&quot;&gt;item2&lt;/di&gt;
+                    &lt;di class=&quot;child-element&quot;&gt;item3&lt;/di&gt;
+                    &lt;di class=&quot;child-element&quot;&gt;item4&lt;/di&gt;
+                    &lt;di class=&quot;child-element&quot;&gt;item5&lt;/di&gt;
+                    &lt;di class=&quot;child-element&quot;&gt;item6&lt;/di&gt;
+                    &lt;di class=&quot;child-element&quot;&gt;item7&lt;/di&gt;
+                &lt;/section&gt;
+                </code>
+            </pre>
+            <p>Alle css-properties voor de parent-element:
+            </p>
+            <pre>
+                <code>
+                    .parent-container {
+                        display: flex;
+                        flex-direction: row | row-reverse | column | column-reverse;
+                        flex-wrap: nowrap | wrap | wrap-reverse;
+                        flex-flow: een waarde van flex-direction en een waarde van flex-wrap, dus bijvoorbeeld: row wrap-reverse;
+                        justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+                        align-items: stretch | flex-start | flex-end | center | baseline | ;
+                        align-content: stretch | flex-start | flex-end | center | space-between | space-around;
+                    }
+
+                        display: flex; hiermee maak je van je container een flex-container. 
+                </code>
+            </pre>
+
+
+            </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+
+            <h4 id="flex-direction">flex-direction: row;</h4>
+            <p>flex-direction: row; De child-elementen worden als rows weergegeven:</p><br>
+            <pre>
+                <code>
+                    .parent-container {
+                        display: flex;
+                        height: 100px;
+                        border: 2px solid black;
+                        flex-direction: row;
+                        background-color: #a89a9a;
+                      }
+
+                      .child-element {
+                        background-color: rgb(27, 147, 49);
+                        border: 2px solid rgb(255, 255, 255);
+                      }
+                </code>
+            </pre>
+            <section class="parent-container">
+                <div class="child-element">item1</div>
+                <div class="child-element">item2</div>
+                <div class="child-element">item3</div>
+                <div class="child-element">item4</div>
+                <div class="child-element">item5</div>
+                <div class="child-element">item6</div>
+                <div class="child-element">item7</div>
+            </section><br>
+
+        <!-- ---------------------------------------------------------- -->
+
+
+            <h4>flex-direction: row-reverse;</h4>
+            <p>flex-direction: row-reverse; De child-elementen worden als rows weergegeven maar de tegenovergestelde richting:</p><br>
+            <pre>
+                <code>
+                    .parent-container-row-reverse {
+                        display: flex;
+                        height: 100px;
+                        border: 2px solid black;
+                        flex-direction: row-reverse;
+                        background-color: #a89a9a;
+                      }
+
+                      .child-element {
+                        background-color: rgb(27, 147, 49);
+                        border: 2px solid rgb(255, 255, 255);
+                      }
+                </code>
+            </pre>
+            <section class="parent-container-row-reverse">
+                <div class="child-element">item1</div>
+                <div class="child-element">item2</div>
+                <div class="child-element">item3</div>
+                <div class="child-element">item4</div>
+                <div class="child-element">item5</div>
+                <div class="child-element">item6</div>
+                <div class="child-element">item7</div>
+            </section><br>
+
+        <!-- ---------------------------------------------------------- -->
+
+
+            <h4>flex-direction: column;</h4>
+            <p>flex-direction: column; De child-elementen worden als kolommen weergegeven:</p><br>
+            <pre>
+                <code>
+                    .parent-container-column {
+                        display: flex;
+                        height: 200px;
+                        border: 2px solid black;
+                        flex-direction: column;
+                        background-color: #a89a9a;
+                      }
+
+                      .child-element {
+                        background-color: rgb(27, 147, 49);
+                        border: 2px solid rgb(255, 255, 255);
+                      }
+                </code>
+            </pre>
+            <section class="parent-container-column">
+                <div class="child-element">item1</div>
+                <div class="child-element">item2</div>
+                <div class="child-element">item3</div>
+                <div class="child-element">item4</div>
+                <div class="child-element">item5</div>
+                <div class="child-element">item6</div>
+                <div class="child-element">item7</div>
+            </section><br>
+
+        <!-- ---------------------------------------------------------- -->
+
+
+            <h4>flex-direction: column-reverse;</h4>
+            <p>flex-direction: column-reverse; De child-elementen in tegenovergestelde richting weergegeven:</p><br>
+            <pre>
+                <code>
+                    .parent-container-column-reverse {
+                        display: flex;
+                        height: 200px;
+                        border: 2px solid black;
+                        flex-direction: column-reverse;
+                        background-color: #a89a9a;
+                      }
+
+                      .child-element {
+                        background-color: rgb(27, 147, 49);
+                        border: 2px solid rgb(255, 255, 255);
+                      }
+                </code>
+            </pre>
+            <section class="parent-container-column-reverse">
+                <div class="child-element">item1</div>
+                <div class="child-element">item2</div>
+                <div class="child-element">item3</div>
+                <div class="child-element">item4</div>
+                <div class="child-element">item5</div>
+                <div class="child-element">item6</div>
+                <div class="child-element">item7</div>
+            </section>
+
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+
+            <h4 id="flex-wrap">flex-wrap: wrap;</h4>
+            <p>flex-wrap: wrap; De child-elementen worden naast elkaar weergegeven als de 
+                elementen niet op 1 rij passen gaan automatisch door op de volgende regel:</p><br>
+            <section class="parent-container-wrap">
+                <div class="child-element-wrap">item1</div>
+                <div class="child-element-wrap">item2</div>
+                <div class="child-element-wrap">item3</div>
+                <div class="child-element-wrap">item4</div>
+                <div class="child-element-wrap">item5</div>
+                <div class="child-element-wrap">item6</div>
+                <div class="child-element-wrap">item7</div>
+            </section><br>
+
+        <!-- ---------------------------------------------------------- -->
+
+
+            <h4>flex-wrap: now-wrap;</h4>
+            <p>flex-wrap: no-wrap; De child-elementen worden als rows weergegeven maar de tegenovergestelde richting:</p><br>
+            <section class="parent-container-row-reverse">
+                <div class="child-element">item1</div>
+                <div class="child-element">item2</div>
+                <div class="child-element">item3</div>
+                <div class="child-element">item4</div>
+                <div class="child-element">item5</div>
+                <div class="child-element">item6</div>
+                <div class="child-element">item7</div>
+            </section><br>
+
+        <!-- ---------------------------------------------------------- -->
+
+
+            <!-- <h4>flex-direction: column;</h4>
+            <p>flex-direction: column; De child-elementen worden als kolommen weergegeven:</p><br>
+            <section class="parent-container-column">
+                <div class="child-element">item1</div>
+                <div class="child-element">item2</div>
+                <div class="child-element">item3</div>
+                <div class="child-element">item4</div>
+                <div class="child-element">item5</div>
+                <div class="child-element">item6</div>
+                <div class="child-element">item7</div>
+            </section><br>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ---------------------------------------------------------- -->
+        <hr>
+        <!-- ---------------------------------------------------------- -->
+
+     
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
