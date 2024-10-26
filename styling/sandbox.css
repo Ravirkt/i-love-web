@@ -1,0 +1,13 @@
+img {
+    width: 100%;
+    margin-bottom: 1em;
+    filter: hue-rotate(120deg); /* Dit draait de tint naar groen */
+
+}
+
+.images {
+    columns: 250px;
+}
+
+.href-image:hover {
+filter: brightness(5);}
