@@ -1,3 +1,6 @@
+10-09-2024
+
+
 in de parent definieer je de grid en in de child pas je het aan
 
 display: grid 
