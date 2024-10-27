@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-Love-Web</title>
+    <link rel="stylesheet" href="./styling/nav.css" />
+  </head>
+
+  <body>
+      <head>
+        <style>
+          body {
+            transition: background-color 1s, color 0.3s;
+          }
+
+          .dark-mode {
+            background-color: black;
+            color: white;
+          }
+
+          button {
+            padding: 10px 15px;
+            margin: 20px;
+          }
+        </style>
+      </head>
+        <button id="dark-mode-button">dark mode on/off</button>
+        <h1>hallllllo</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+          voluptatum nam veritatis eaque quidem possimus accusantium. Id nam
+          eligendi, quam doloribus illum ad doloremque beatae magni iusto illo
+          tempora temporibus.
+        </p>
+
+        <script>
+          const button = document.getElementById("dark-mode-button");
+
+          button.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+          });
+        </script>
+      </body>
+    </html>
