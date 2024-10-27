@@ -12,7 +12,3 @@ img {
 .href-image:hover {
 filter: brightness(5);}
 
-p {
-    color: black;
-    display: flex;
-}
