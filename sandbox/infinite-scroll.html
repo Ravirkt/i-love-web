@@ -9,62 +9,38 @@
 
   <body>
     <style>
-    body {
-    margin: 0;
-    overflow: hidden; /* Verberg scrollbalken */
-}
+      body {
+        margin: 0;
+      }
 
-.scroll-container {
-    width: 100vw; /* Volledige breedte van het scherm */
-    overflow: hidden; /* Verberg de inhoud die buiten de container valt */
-    position: relative;
-}
+      .image-container {
+        width: 100vw;
+        overflow: hidden;
+      }
 
-.scrolling-images {
-    display: flex; /* Gebruik flexbox voor horizontale uitlijning */
-    animation: scroll 30s linear infinite; /* Pas de duur aan voor snelheid */
-}
+      .scrolling-images {
+        display: flex;
+        animation: scroll 30s linear infinite;
+      }
 
-.scroll-container-2 {
-    width: 100vw; /* Volledige breedte van het scherm */
-    overflow: hidden; /* Verberg de inhoud die buiten de container valt */
-    position: relative;
-}
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
 
-.scrolling-images-2 {
-    display: flex; /* Gebruik flexbox voor horizontale uitlijning */
-    animation: scroller 30s linear infinite; /* Pas de duur aan voor snelheid */
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%); /* Scroll naar links */
-    }
-}
-
-@keyframes scroller {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%); /* Scroll naar links */
-    }
-}
-
-/* Zorg ervoor dat de afbeeldingen niet vervormen */
-img {
-    width: auto; /* Zorg ervoor dat de afbeelding zijn verhouding behoudt */
-    height: 300px; /* Geef een vaste hoogte */
-    margin-right: 10px; /* Optionele ruimte tussen de afbeeldingen */
-}
-
+      img {
+        width: auto;
+        height: 300px;
+        margin-right: 10px;
+      }
     </style>
 
-<div class="scroll-container">
-    <div class="scrolling-images">
+    <div class="image-container">
+      <div class="scrolling-images">
         <img src="https://picsum.photos/237/300" />
         <img src="https://picsum.photos/678/300" />
         <img src="https://picsum.photos/202/320" />
@@ -77,25 +53,7 @@ img {
         <img src="https://picsum.photos/200/300" />
         <img src="https://picsum.photos/200" />
         <img src="https://picsum.photos/200" />
+      </div>
     </div>
-</div>
-
-<div class="scroll-container-2">
-    <div class="scrolling-images-2">
-        <img src="https://picsum.photos/237/300" />
-        <img src="https://picsum.photos/678/300" />
-        <img src="https://picsum.photos/202/320" />
-        <img src="https://picsum.photos/456/600" />
-        <img src="https://picsum.photos/120/90" />
-        <img src="https://picsum.photos/200/23" />
-        <img src="https://picsum.photos/200/900" />
-        <img src="https://picsum.photos/200/300" />
-        <img src="https://picsum.photos/100" />
-        <img src="https://picsum.photos/200/300" />
-        <img src="https://picsum.photos/200" />
-        <img src="https://picsum.photos/200" />
-    </div>
-</div>
-
   </body>
 </html>
