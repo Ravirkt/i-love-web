@@ -1,0 +1,77 @@
+* {
+    overflow: hidden;
+}
+
+body {
+  background-color: #e0f7fa; 
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #00796b; 
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  border: 2px solid #00796b;
+  border-radius: 5px;
+  resize: vertical;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #004d40; 
+}
+
+#output {
+  width: 90vw;
+  max-width: 800px;
+  height: 40vh;
+  border: 2px solid #004d40; 
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+#output:hover {
+  transform: scale(1.02); 
+}
+
+.blok {
+  width: 30px;
+  height: 30px;
+  background-color: #00796b; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blok:hover {
+  transform: scale(1.1);
+  background-color: #004d40; 
+  color: #e0f7fa;
+}

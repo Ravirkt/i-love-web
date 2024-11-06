@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout-sandbox</title>
+  <link rel="stylesheet" href="../styling/layout-testing.css" />
+
+</head>
+
+<body>
+  <h2>Parent:</h2>
+  <textarea id="input-parent" placeholder="parent css dingen"></textarea>
+
+  <h2>Child:</h2>
+  <textarea id="input-child" placeholder="child css dingen"></textarea>
+
+  <h2>Output:</h2>
+  <div id="output">
+    <div class="blok">1</div>
+    <div class="blok">2</div>
+    <div class="blok">3</div>
+    <div class="blok">4</div>
+    <div class="blok">5</div>
+    <div class="blok">6</div>
+    <div class="blok">7</div>
+    <div class="blok">8</div>
+    <div class="blok">9</div>
+    <div class="blok">10</div>
+  </div>
+
+  <script>
+    const parent = document.getElementById('input-parent');
+    const child = document.getElementById('input-child');
+    const output = document.getElementById('output');
+    const blokken = document.querySelectorAll('.blok');
+
+    // parent
+    parent.addEventListener('input', function() {
+      output.style = '';
+      try {
+        output.style.cssText = parent.value;
+      } catch (alert) {
+      }
+    });
+
+    // child
+    child.addEventListener('input', function() {
+      blokken.forEach(block => block.style = '');
+      try {
+        blokken.forEach(block => block.style.cssText = child.value);
+      } catch (alert) {
+      }
+    });
+  </script>
+</body>
+</html>
