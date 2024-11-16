@@ -1,15 +1,14 @@
 body {
   background-color: rgb(0, 0, 0);
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-
 }
 
 /* Header en navigation */
@@ -17,7 +16,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .nav-item:first-child {
@@ -25,6 +24,11 @@ body {
 
   & a {
     color: rgb(219, 102, 12);
+
+    &:hover {
+      color: rgba(150, 77, 31, 0.521);
+      transition: 1000ms;
+    }
   }
 }
 
@@ -51,24 +55,24 @@ body {
 
 /* aniatie voor sterren */
 .star {
-  width: 10px; 
+  width: 10px;
   height: 10px;
-  background-color: rgb(255, 255, 255); 
-  border-radius: 50%; 
-  position: absolute; 
-  animation: fall 3s linear infinite; 
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  animation: fall 3s linear infinite;
   z-index: 0;
 }
 
 @keyframes fall {
   0% {
-    top: -10px; 
+    top: -10px;
     left: 50%;
-    opacity: 1; 
+    opacity: 1;
   }
   100% {
-    top: 100vh; 
-    opacity: 0; 
+    top: 100vh;
+    opacity: 0;
   }
 }
 
@@ -161,6 +165,3 @@ body {
   animation-duration: 5.5s;
   animation-delay: 1.8s;
 }
-
-
-
