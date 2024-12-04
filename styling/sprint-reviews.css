@@ -1,0 +1,177 @@
+/* Algemeen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #2d2d2d;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .sub-titel {
+    font-size: 1.3em;
+    color: #555;
+  }
+  
+  .paragraaf {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Sectie Containers */
+  .sectie-containers {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  /* Sectie 1 */
+  .sectie-1 {
+    flex: 1;
+    margin-bottom: 40px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  /* Sectie 2 */
+  .sectie-2 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sectie-2 h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .sectie-2 p {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+  
+  .sectie-2 ul {
+    margin-left: 20px;
+  }
+  
+  .sectie-2 ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Details en dropdown styling */
+  details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  summary:hover {
+    color: #007bff;
+  }
+  
+  details p {
+    font-size: 1em;
+    color: #555;
+    margin-left: 20px;
+  }
+  
+  /* Download buttons */
+  .download-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .download-button:active {
+    background-color: #003c7a;
+  }
+  
+  .download-button:focus {
+    outline: none;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .sectie-containers {
+      padding: 15px;
+    }
+  
+    .sectie-1 {
+      margin-bottom: 30px;
+    }
+  
+    .sectie-2 {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .sub-titel {
+      font-size: 1.1em;
+    }
+  
+    .paragraaf {
+      font-size: 1em;
+    }
+  
+    .download-button {
+      width: 100%;
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.6em;
+    }
+  
+    .sub-titel {
+      font-size: 1em;
+    }
+  
+    .paragraaf {
+      font-size: 0.95em;
+    }
+  
+    .download-button {
+      font-size: 1em;
+    }
+  }
+  

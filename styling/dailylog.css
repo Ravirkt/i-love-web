@@ -1,0 +1,100 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: #da630e;
+  color: white;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.dropdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dropdown {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #d25d10;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dropdown[open] {
+  background-color: #ffffff;
+  border-color: #d25d10;
+}
+
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  border: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+summary:hover {
+  background-color: #e0e0e0;
+}
+
+.content {
+  color: black;
+  padding: 1em;
+}
+
+a {
+  color: #000000;
+}
+ ul li{
+  color: black;
+}
+
+h3 {
+  color: #000000;
+  padding: 1em;
+}
+
+code {
+  color: #000000;
+  padding: 1em;
+  display: flex;
+}
+
+p {
+  color: #000000;
+  padding: 1em;
+}
+
+
+img {
+  height: 30em;
+  width:  30em;
+
+}
