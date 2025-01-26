@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      body
+       {
+        background-color: black;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+       p {
+        display: none;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .visible {
+        display: block;
+      }
+
+      .loader {
+        background-color: rgb(0, 0, 0);
+        height: 10em;
+        width: 10em;
+        border-radius: 100%;
+        border: 10px solid rgb(48, 111, 5) ;
+        border-top: 10px solid rgb(255, 255, 255);
+        animation: rotate 2s  linear infinite;
+
+        &:hover {
+            border-top: 10px 2s solid rgb(0, 30, 255);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="loader"></span>
+    </div>
+
+    <p class="text">Hallo</p>
+  </body>
+
+  <script defer>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".container");
+        const text = document.querySelector(".text");
+
+        setTimeout(() => {
+          loader.classList.add("hidden");
+
+          text.classList.add("visible");
+        }, 2000); 
+      });
+  </script>
+</html>
