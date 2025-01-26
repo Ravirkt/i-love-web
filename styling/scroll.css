@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: hidden;
+    gap: 1em;
+
+}
+
+.image-row {
+	display: flex;
+	flex-direction: column;
+}
+
+.reverse-column {
+	transform: translateY(calc(-100% + 100vh));
+    flex-direction: column-reverse;
+
+}
+
+@keyframes adjust-position {
+	from {
+		transform: translateY(calc(-100% + 100vh));
+        /* bij scrollem gaat de content 100% verticaal de content buiten de view
+        
+        */
+	}
+
+	to {
+		transform: translateY(calc(100% - 100vh));
+        /* de  */
+	}
+}
+
+
+.reverse-column {
+    animation: adjust-position linear forwards;
+	animation-timeline: scroll(root block);
+    /* scroll geeft animatie toe aan scrollgedrag // geeft aan dat het scrollen in de root is // geeft de y as van de scroll   */
+
+}
