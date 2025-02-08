@@ -159,14 +159,34 @@ nav {
 
 .hero-section-title {
   font-size: 5em;
+
+
+  span {
+    font-family: "Freckle Face", serif;
+
+  }
+
+  
+    & span:nth-child(1) {
+      color: blue;
+    }
+  
+    span:nth-child(2) {
+      color: rgb(9, 80, 2);
+    }
+  
+    span:nth-child(3) {
+      color: rgb(255, 0, 251);
+    }
+  
+    span:nth-child(4) {
+      color: rgb(255, 149, 0);
+    }
 }
 
 .hero-section-sub-title {
   font-size: 2em;
   color: greenyellow;
-
-  
-
 }
 
 
@@ -185,7 +205,6 @@ nav {
 
 .connect-button {
     border: 3px solid greenyellow;
-    border-radius: 10%;
     background: transparent;
     width: 6em;
     height: 2em;
