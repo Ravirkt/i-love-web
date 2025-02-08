@@ -1,0 +1,35 @@
+body {
+    --padding-sections: 5em 1.5em;
+
+
+    font-family: "Poiret One", serif;
+
+
+}
+
+
+
+
+
+.logo-name {
+    font-family: "Freckle Face", serif;
+    font-size: 1.5em ;
+  
+  
+  }
+
+  h2 {
+    font-family: "Poiret One", serif;
+
+
+  }
+
+  p {
+    font-size: 1.5em;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: greenyellow;
+  }
