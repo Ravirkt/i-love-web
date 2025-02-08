@@ -163,12 +163,10 @@ nav {
 
   span {
     font-family: "Freckle Face", serif;
-    letter-spacing: -8px;
-
+    letter-spacing: -0.2em;
   }
 
-  
-    & span:nth-child(1) {
+    span:nth-child(1) {
       color: blue;
     }
   
@@ -187,7 +185,6 @@ nav {
 
 .hero-section-sub-title {
   font-size: 2em;
-  color: greenyellow;
 }
 
 
